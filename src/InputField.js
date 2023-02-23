@@ -1,10 +1,9 @@
 import TextField from '@mui/material/TextField';
 import { useContext } from "react";
 import { BetContext } from './App';
-
+import './InputField.css';
 function InputField(){
 
-    
     const { bet, setBet } = useContext(BetContext);
 
     const onChange = (event) => {
@@ -12,7 +11,7 @@ function InputField(){
         console.log(bet);
     }
 
-    return <TextField onChange={onChange} value={bet} id="outlined-basic" variant="outlined"></TextField>;
+    return <TextField onChange={onChange} type="number" value={bet} id="outlined-basic" variant="outlined"></TextField>;
 }
 
 export default InputField;

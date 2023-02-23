@@ -1,0 +1,7 @@
+.inputField {
+    margin-left: 20px;
+    background: cornsilk;
+}
+.inputRow {
+    display: flex;
+}

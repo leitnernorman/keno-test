@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, createContext, useContext } from "react";
+import { useState } from "react";
 import NumberGrid from './NumberGrid';
 import Stake from './Stake';
 import InputField from './InputField';
@@ -13,13 +13,9 @@ function App() {
 
   return (
     <div>
-      {/* <Button variant="contained">Hello World</Button> */}
-      {/* <div>{generateArray}</div> */}
-      
-      
       <BetContext.Provider value={{ bet: bet, setBet: setBet }}>
       <NumberGrid />
-      <div>
+      <div className='inputRow'>
         <Stack direction="row" spacing={2}>
           <Stake value={100}/>
           <Stake value={250}/>
@@ -27,9 +23,7 @@ function App() {
           <Stake value={1000}/>
           <Stake value={2500}/>
         </Stack>
-        <div>
-          <InputField />
-        </div>
+        <div className='inputField'><InputField /></div>
       </div>
       </BetContext.Provider>
     </div>

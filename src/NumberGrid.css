@@ -1,0 +1,9 @@
+.box-text{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    padding: 30%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
